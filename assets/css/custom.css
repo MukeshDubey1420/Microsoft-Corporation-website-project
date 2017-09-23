@@ -1,15 +1,39 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(http://wallpapersinhd.net/wp-content/uploads/Elegant_Background-2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #header {
     text-align: center;
     color: lavenderblush;
-    background: url(http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGKTe?ver=e6d0);
-    background-size: 99% 116%;
-    background-repeat: no-repeat;
+    background: url(http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGKTe?ver=e6d0) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   width: 100%;
+    padding-top:50px;
+    margin-top:-10px; 
 }
+   
 #header img {
+	position:absolute;
+    top:0;
+    bottom:0;   
+    max-height:1000px;
+    overflow:hidden;    
+      left: 0; 
+      right: 0;
+    z-index:-1;         
+    border:10px solid #545351;
     width: 100%;
-    z-index: 1;
-    height: auto;
-    margin: 1px;
 }
 #header i {
     font-size: 30px;
@@ -445,7 +469,7 @@
         border: 2px double grey;
     }
     #whatwedo2 i {
-        color: lightblue;
+        color: blue;
     }
     #freebies {
         margin-top: 5px;
@@ -662,19 +686,7 @@
         margin-top: 70px;
         margin-left: 3px;
     }
-    #footer {
-        text-align: center;
-        background-color: black;
-        height: 100px;
-    }
-    #footericons {
-        float: right;
-        padding-right: 26px;
-        border-top: 1px solid grey;
-    }
-    #footericons i {
-        font-size: 14px;
-    }
+	
     .btn {
         display: inline-block;
         padding: 8px 5px;
