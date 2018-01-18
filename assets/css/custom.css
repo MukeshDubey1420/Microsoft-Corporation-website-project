@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    cursor: pointer;
 }
 
 body {
@@ -18,9 +19,12 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   width: 100%;
+   
     padding-top:50px;
     margin-top:-10px; 
+     width: 1900px;
+    height: 1000px;
+    cursor: pointer;
 }
    
 #header img {
@@ -33,7 +37,8 @@ body {
       right: 0;
     z-index:-1;         
     border:10px solid #545351;
-    width: 100%;
+   
+    
 }
 #header i {
     font-size: 30px;
@@ -43,9 +48,10 @@ body {
     border: 2px;
 }
 #header h2 {
-    margin-top: 6%;
+    margin-top: 11%;
     font-family: 'Raleway', sans-serif;
-    font-size: 612%;
+    font-size: 687%;
+    color: lavenderblush;
 }
 #header p {
     font-size: 35px;
@@ -345,16 +351,19 @@ body {
 }
 /*styling for small devices...*/
 
-@media (min-width: 414px) and (max-width: 736px) {
+@media (min-width: 320px) and (max-width: 690px) {
     .navbar-header {
         margin-right: 33px;
         margin-left: -58px;
     }
     .navbar-brand {
-        float: left;
-        height: 8px;
-        line-height: 26px;
-    }
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+    
     .container {
         width: 100%;
     }
@@ -364,11 +373,20 @@ body {
     #header {
         text-align: center;
         color: lavenderblush;
-        background: url(http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGKTe?ver=e6d0);
-        background-size: 103% 113%;
-        background-repeat: no-repeat;
+        background: url(http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGKTe?ver=e6d0) no-repeat center center fixed; 
+        
         width: 100%;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
+    #header h2 {
+    margin-top: 63%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 41px;
+    color: lavenderblush;
+}
     #header img {
         width: 100%;
         z-index: 1;
@@ -382,12 +400,7 @@ body {
         opacity: 0.7;
         border: 2px;
     }
-    #header h2 {
-        margin-top: 12%;
-        font-family: 'Raleway', sans-serif;
-        font-size: 300%;
-        padding-top: 12px;
-    }
+   
     #header p {
         font-size: 24px;
         color: lavenderblush;
