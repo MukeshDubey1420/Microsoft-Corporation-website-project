@@ -22,7 +22,7 @@ body {
    
     padding-top:50px;
     margin-top:-10px; 
-     width: 1900px;
+     width: 100% !important;
     height: 1000px;
     cursor: pointer;
 }
@@ -39,6 +39,10 @@ body {
     border:10px solid #545351;
    
     
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    font-size: 18px;
 }
 #header i {
     font-size: 30px;
@@ -375,7 +379,7 @@ body {
         color: lavenderblush;
         background: url(http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGKTe?ver=e6d0) no-repeat center center fixed; 
         
-        width: 100%;
+        width: 100% !important;
         -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
