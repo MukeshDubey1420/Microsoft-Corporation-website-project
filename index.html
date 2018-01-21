@@ -28,6 +28,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <button onclick="topFunction()" id="topbtn" title="Go to Top"> <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
   <div class="container-fluid">
     <!--header navbar starts-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -587,6 +588,26 @@
 </footer>
 <!-- footer ends  -->
 </div>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topbtn").style.display = "block";
+    } else {
+        document.getElementById("topbtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 <script src="assets/js/bootstrap.js">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
