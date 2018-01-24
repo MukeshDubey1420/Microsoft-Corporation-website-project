@@ -18,20 +18,38 @@
    <link href="assets/css/hover-min.css" rel="stylesheet"> 
   <link href="assets/css/Footer-with-logo.css" rel="stylesheet">
   <link href="assets/css/pace-theme-corner-indicator.css" rel="stylesheet">
-   
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="assets/js/pace.min.js"></script>
     
     
 
   <link rel="shortcut icon" href="titleimg.png" />
+    
+    
+    <style>
+
+        .top-nav-collapse {
+            background-color: darkblue!important; 
+        }
+       
+        
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: darkblue !important;
+            } 
+        }
+      
+        }
+    
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <button onclick="topFunction()" id="topbtn" title="Go to Top"> <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
   <div class="container-fluid">
     <!--header navbar starts-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse  navbar-fixed-top scrolling-navbar animated fadeInDown delay-0.5s">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,7 +57,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hvr-grow-shadow" href="https://www.microsoft.com/en-in/">MICROSOFT CORPORATION</a>
+          <a class="navbar-brand hvr-grow-shadow" href="https://www.microsoft.com/en-in/"><strong>MICROSOFT CORPORATION</strong></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -71,7 +89,7 @@
    
       <section id="header" >
       <div class="row">
-        <h2 class="hvr-grow-shadow">MICROSOFT CORPORATION</h2>
+        <h2 class="hvr-grow-shadow animated fadeInDown">MICROSOFT CORPORATION</h2>
         <!-- decoration line starts-->
         <div class="decorline">
           <div class="line"></div>
@@ -79,7 +97,7 @@
           <div class="line"></div>
         </div>
         <!-- decoration line ends-->
-        <p class="text-capitalize hvr-grow-shadow">What Do You Think?</p>
+        <p class="text-capitalize hvr-grow-shadow animated fadeInDown">What Do You Think?</p>
           <br>
         <div class="think"><a href="#about" style="color: white;"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
 
@@ -322,7 +340,7 @@
           SDKs, Redistributables, And Tools.
           <br />
           <button type="button" class="btn btn-info">More Details</button>
-        </p class="text-capitalize">
+        <p class="text-capitalize">
         <img src="https://c.s-microsoft.com/en-us/CMSImages/DLC_Drivers_75x75.png?version=e873642a-df15-acee-e342-d73a5bcfb496" />
         <h3>Hardware Drivers</h3>
         <p class="text-capitalize">
