@@ -507,21 +507,24 @@
     <h3>Users</h3>
     <h4>Businesses and Professionals</h4>
     <div class="number">
-      <h3><small><mark>340+ Million</mark></small></h3>
+      <h3 class="counter-count"><small><mark>340</mark></small></h3>
+         <h3 ><small><mark>Millions Above</mark></small></h3>
     </div>
   </div>
   <div class="col-md-4">
     <h3>Downloads</h3>
     <h4>Freebies, Templates & UI Kits</h4>
     <div class="number">
-      <h3><small><mark>440+ Million</mark></small></h3>
+      <h3 class="counter-count"><small><mark>440</mark></small></h3>
+         <h3 ><small><mark>Millions Above</mark></small></h3>
     </div>
   </div>
   <div class="col-md-4">
     <h3>Countries</h3>
     <h4>Where We Made SponserShips</h4>
     <div class="number">
-      <h3><small><mark>150+ Countries</mark></small></h3>
+      <h3 class="counter-count"><small><mark>150</mark></small></h3>
+         <h3 ><small><mark>Countries Above</mark></small></h3>
     </div>
   </div>
 
@@ -644,6 +647,19 @@ $(document).ready(function(){
   });
 });
 
+</script>
+<script>
+$('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 </script>
 <script src="assets/js/bootstrap.js">
 </script>
